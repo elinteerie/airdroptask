@@ -3,7 +3,10 @@
         {
             "src": "back/wsgi.py",
             "use": "@vercel/python"
-        }
+        }, 
+        {
+            "installCommand": "python manage.py migrate"
+          }
     ],
     "routes": [
         {
