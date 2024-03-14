@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airdrop Registration Success</title>
+</head>
+<body>
+    <h1>Thank you for Joining The DREW Community!</h1>
+    <p>Your referral ID: {{ referral_id }}</p>
+    <p>Your Balance: {{ balance }}</p>
+    {% if referral_link %}
+    <p>Share your referral link: <a href="{{ referral_link }}">{{ referral_link }}</a></p>
+    {% endif %}
+    <p>Your Referral Count: {{ referal_count }}</p>
+    <!-- Add any additional content you want to display on the success page -->
+    <p>Login with Your Solana Wallet Address: <a href="/airdrop/user/"><strong>Login</strong></a> </p>
+</body>
+</html>
