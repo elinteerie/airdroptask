@@ -1,24 +1,226 @@
-<!DOCTYPE html>
+{% load static %}
+
 <html>
 <head>
-    <title>User Info</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$DREW AIRDROP GIVEAWAY</title>
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/Images/imgg.png' %}">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+  </head>
+
+
+ <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+   body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: whitesmoke;
+}
+
+ #headerbg {
+ 
+  height: 16vh;
+  /* width: 100vw; */
+  text-align: center;
+  background-image: url(assets/img/Images/about_img02.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+ 
+  padding: 20px;
+  text-align: center;
+ 
+} 
+
+main {
+  padding: 20px;
+}
+
+form {
+  /* max-width: 600px; */
+  /* margin: 0 auto; */
+  border: 1px solid black;
+  /* height: 100vh; */
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 246, 235, 0.714);
+  color: black;
+  /* width: 100vw; */
+
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: rgb(255, 72, 0);
+}
+
+input {
+  width: 100%;
+  padding: 15%;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+.container{
+    background-image: url('{% static 'assets/img/Images/nnnn.jpg' %}');
+     background-size: contain;
+      background-repeat: no-repeat; 
+      backface-visibility: 0; 
+      background-position: center; 
+      /* background-opacity: 0.2; */
+}
+
+</style>
+
 <body>
-    <h1>Referal Information</h1>
-    <form method="post">
-        {% csrf_token %}
-        <label for="solana_wallet">Solana Wallet Address:</label>
-        <input type="text" name="solana_wallet" id="solana_wallet">
-        <button type="submit">Submit</button>
-    </form>
-    {% if user %}
-    <h2>User Details</h2>
-    <p>Solana Wallet Address: {{ user.solana_wallet }}</p>
-    <p>Balance: {{ balance }}</p>
-    <p>Referral Count: {{ referral_count }}</p>
-    {% endif %}
-    {% if error_message %}
-    <p>{{ error_message }}</p>
-    {% endif %}
-</body>
+    <div class="container-fluid" id="headerbg">
+      <div class="row">
+        <div class="col">
+          <div >
+            <!-- <h1>$DREW AIRDROP GIVEAWAY</h1>
+            <p>The Future Of Memecoin - A Revolutionary Memecoin Inspired By The Creativity And Iconic Style Of Justin Bieber's Fashion Brand, Drew House.</p> -->
+            </div>
+    
+        </div>
+      </div>  
+    </div>
+ 
+    <div class="container">
+      
+        <div class="row">
+           
+              <header class="mt-5">
+                <div class="section-title text-center mb-60">
+                  <h4 class="my-3" >login to your $DREW Dashboard</h4>
+                 
+              </div>
+            
+               
+              </header>
+              
+            <div class="col-md-12 ">
+                <main>
+                  
+
+                    
+                <form id="airdrop-form"  method="post">
+                    {% csrf_token %}
+            <h4 class="text-capitalized text-black">Wallet Address :</h4>
+                <label for="solana_wallet" class="text-warning text-bolder">Input your Solana Wallet Address Below* </label><br>
+                <input type="text" name="solana_wallet" id="wallet" placeholder="6g1Fi3wqxbuLR6ZmPN7HGKHGwyc8Eteh87Bxoj2RGTu" name="wallet" style=" padding: 10px; outline:none; border-radius: 5px; "
+                required><br>
+                  <br>
+
+                  <button type="submit" <button type="submit" style="background-color: orange;">LOGIN</button> 
+                </form>
+
+            </main>
+                      
+                    <div class="col-md-12 ">
+                        <main>
+                          <div class="section-title text-center mb-60">
+                            <h5 class="mb-5 text-light sub-title">Claim $DREW Airdrop Now <br> (10,000 $DREW/Referral)</h5> 
+                            <!-- <h4 class="title"><span>Drew Token</span> Strategy and <br> Project Plan </h4> -->
+                            
+                        </div>
+                    
+        
+                     
+                        
+                        
+
+                        
+                        {% if user %}
+                        <form id="airdrop-form"  method="post">
+        
+                            <div class="text-center my-3" >
+                                <p style="color: black;">
+                                    <b>
+                                        Referrals ID : 
+                                    </b>
+                                    <span>{{ referral_id }}</span>
+                                </p>
+        
+                                <p style="color: black;">
+                                    <b>
+                                        MY SOLANA WALLET ADDRESS : 
+                                    </b>
+                                    <span>{{ user.solana_wallet }}</span>
+                                </p>
+                                <p style="color: black;">
+                                    <b>
+                                        DREW BALANCE : 
+                                    </b>
+                                    <span>{{ balance }}</span> $DREW
+                                </p>
+                                <p style="color: black;">
+        
+            
+                                    <b>
+                    
+                                        Referrals : 
+                                    </b>
+                                    <span>{{referral_count}}</span>
+                                </p>
+                              
+                                <p style="color: black;">
+                                    <b>
+                                      Share Referral Link : /airdrop/signup{{user.referral_id}}
+                                    </b>
+                                    
+                                </p>
+                                {% endif %}
+                        {% if error_message %}
+                        <p>{{ error_message }}</p>
+                                {% endif %}
+                            </div>
+        
+        
+            </div>
+        </div>
+    </div>
+   
+    
+    
+ 
+
+    <footer>
+        <p>&copy; 2024 DREW Token. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+  
+
 </html>
