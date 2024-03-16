@@ -240,12 +240,11 @@ label {
 	color: #fff;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 15px;
+	font-size: 10px;
 	font-weight: 700;
 	letter-spacing: .5px;
 	line-height: 1;
 	margin-bottom: 0;
-	padding: 25px 50px;
 	text-align: center;
 	text-transform: uppercase;
 	touch-action: manipulation;
