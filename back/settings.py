@@ -72,11 +72,11 @@ TEMPLATES = [
 WSGI_APPLICATION = 'back.wsgi.application'
 
 DATABASE_EXTERNAL ='postgres://default:4STIPmJgAc2z@ep-snowy-forest-a4hby3x7.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require'
-#import dj_database_url
+import dj_database_url
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
+"""
 
 DATABASES = {
     'default': {
@@ -89,7 +89,7 @@ DATABASES = {
 DATABASES = {
     'default': dj_database_url.parse(DATABASE_EXTERNAL)
 }
-"""
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
