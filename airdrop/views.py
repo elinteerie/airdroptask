@@ -56,3 +56,8 @@ def user_info(request):
         # Render the form
         form = UserForm(request.POST)
         return render(request, 'airdrop/user.html', {'form': form})
+    
+
+def index_view(request):
+    
+    return render(request, 'airdrop/index.html')

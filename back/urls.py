@@ -16,8 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from airdrop.views import index_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', index_view, name='home-page'),
     path('airdrop/', include('airdrop.urls'))
 ]
