@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-t&w-vlg1id8c%-gpao$s17o3yua1h)d0b$x5t*_76r#_-c4x9q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['airdroptask.onrender.com', '.onrender.com', 'drewtoken.com', 'www.drewtoken.com', 'localhost', '127.0.0.1',]
 
