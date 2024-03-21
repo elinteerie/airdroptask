@@ -240,11 +240,12 @@ label {
 	color: #fff;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 10px;
+	font-size: 15px;
 	font-weight: 700;
 	letter-spacing: .5px;
 	line-height: 1;
 	margin-bottom: 0;
+	padding: 10px 30px;
 	text-align: center;
 	text-transform: uppercase;
 	touch-action: manipulation;
@@ -270,7 +271,7 @@ label {
 }
 .btn:hover {
 	border-color: #ffaf0a;
-	color: #ffaf0a;
+	color: white;
 }
 .btn.btn-two {
 	background: #564DCA;
