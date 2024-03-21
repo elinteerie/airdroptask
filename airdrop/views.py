@@ -2,7 +2,9 @@ from django.shortcuts import render, redirect
 from .forms import AirdropForm, UserForm
 from django.urls import reverse
 from .models import User
-
+import os
+from django.conf import settings
+from django.http import HttpResponse
 
 def airdrop_signup(request):
     if request.method == 'POST':
@@ -61,3 +63,10 @@ def user_info(request):
 def index_view(request):
     
     return render(request, 'airdrop/index.html')
+
+
+
+def ads_txt_view(request):
+    with open(os.path.join(settings.STATIC_ROOT, 'ads.txt')) as file:
+        file_content = file.readlines()
+    return HttpResponse(file_content, content_type="text/plain")

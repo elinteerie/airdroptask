@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-t&w-vlg1id8c%-gpao$s17o3yua1h)d0b$x5t*_76r#_-c4x9q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['airdroptask.onrender.com', '.onrender.com', 'drewtoken.com', 'www.drewtoken.com', 'localhost', '127.0.0.1',]
 
 
 # Application definition
@@ -142,3 +142,4 @@ STORAGES = {
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+WHITENOISE_KEEP_ONLY_HASHED_FILES = False

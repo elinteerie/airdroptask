@@ -20,10 +20,11 @@ from airdrop.views import index_view
 
 from django.views.generic import RedirectView
 from django.contrib.staticfiles.storage import staticfiles_storage
+from airdrop.views import ads_txt_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index_view, name='home-page'),
     path('airdrop/', include('airdrop.urls')),
-    path('ads.txt',RedirectView.as_view(url=staticfiles_storage.url("ads.txt"))),
+    path("ads.txt", ads_txt_view, name='ads.txt'),
 ]
