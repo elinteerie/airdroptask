@@ -65,6 +65,11 @@ def index_view(request):
     return render(request, 'airdrop/index.html')
 
 
+def presale_view(request):
+    
+    return render(request, 'airdrop/presale.html')
+
+
 
 def ads_txt_view(request):
     with open(os.path.join(settings.STATIC_ROOT, 'ads.txt')) as file:
