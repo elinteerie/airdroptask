@@ -23,8 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-t&w-vlg1id8c%-gpao$s17o3yua1h)d0b$x5t*_76r#_-c4x9q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
+DEBUG = False
 ALLOWED_HOSTS = ['airdroptask.onrender.com', '.onrender.com', 'drewtoken.com', 'www.drewtoken.com', 'localhost', '127.0.0.1']
 
 
@@ -71,7 +70,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'back.wsgi.application'
 
-DATABASE_EXTERNAL ='postgres://default:4STIPmJgAc2z@ep-snowy-forest-a4hby3x7.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require'
+DATABASE_EXTERNAL ='postgres://oexsteun:UzeqrwjMx4cA154Uzkbb7aPVdQ-dtMFR@bubble.db.elephantsql.com/oexsteun'
 import dj_database_url
 
 # Database
@@ -87,7 +86,7 @@ DATABASES = {
 """
 
 DATABASES = {
-    'default': dj_database_url.parse(DATABASE_EXTERNAL)
+    'default': dj_database_url.parse(DATABASE_EXTERNAL, ssl_require=False)
 }
 
 
@@ -131,12 +130,12 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 
 
-STORAGES = {
+"""STORAGES = {
     # ...
     "staticfiles": {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
-}
+}"""
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
