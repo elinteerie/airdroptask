@@ -70,24 +70,36 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'back.wsgi.application'
 
-DATABASE_EXTERNAL ='postgres://oexsteun:UzeqrwjMx4cA154Uzkbb7aPVdQ-dtMFR@bubble.db.elephantsql.com/oexsteun'
+#DATABASE_EXTERNAL ='postgres://oexsteun:UzeqrwjMx4cA154Uzkbb7aPVdQ-dtMFR@bubble.db.elephantsql.com/oexsteun'
 import dj_database_url
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-"""
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-"""
 
 DATABASES = {
-    'default': dj_database_url.parse(DATABASE_EXTERNAL, ssl_require=False)
+
+    'default': {
+
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
+        'NAME': 'postgresdrew',
+
+        'USER': 'postgresdrew',
+
+        'PASSWORD': 'CoroAuth872',
+
+        'HOST': 'dbdrew.cb5mscda9j0g.eu-north-1.rds.amazonaws.com',
+
+        'PORT': '5432',
+
+    }
+
 }
+
+#DATABASES = {
+#    'default': dj_database_url.parse(DATABASE_EXTERNAL, ssl_require=False)
+#}
 
 
 # Password validation
