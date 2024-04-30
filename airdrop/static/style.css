@@ -1,0 +1,1129 @@
+/*
+developer info :====
+Asif sharker => frontend developer
++8801768705593 what'sapp number
+Dhaka,Bangladesh.
+Telegram: @asifsharkerwd
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap');
+body {
+    font-family: 'Lexend', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    background: #000;
+    color: #fff;
+}
+@font-face {
+    font-family: 'Kurri Island PERSONAL';
+    src: url('fonts/KurriIslandPERSONAL-Medium.eot');
+    src: url('fonts/KurriIslandPERSONAL-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/KurriIslandPERSONAL-Medium.woff2') format('woff2'),
+        url('fonts/KurriIslandPERSONAL-Medium.woff') format('woff'),
+        url('fonts/KurriIslandPERSONAL-Medium.ttf') format('truetype'),
+        url('fonts/KurriIslandPERSONAL-Medium.svg#KurriIslandPERSONAL-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kurri Island PERSONAL';
+    src: url('fonts/KurriIslandPERSONAL-Bold.eot');
+    src: url('fonts/KurriIslandPERSONAL-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/KurriIslandPERSONAL-Bold.woff2') format('woff2'),
+        url('fonts/KurriIslandPERSONAL-Bold.woff') format('woff'),
+        url('fonts/KurriIslandPERSONAL-Bold.ttf') format('truetype'),
+        url('fonts/KurriIslandPERSONAL-Bold.svg#KurriIslandPERSONAL-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Kurri Island PERSONAL';
+    src: url('fonts/KurriIslandPERSONAL-Regular.eot');
+    src: url('fonts/KurriIslandPERSONAL-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/KurriIslandPERSONAL-Regular.woff2') format('woff2'),
+        url('fonts/KurriIslandPERSONAL-Regular.woff') format('woff'),
+        url('fonts/KurriIslandPERSONAL-Regular.ttf') format('truetype'),
+        url('fonts/KurriIslandPERSONAL-Regular.svg#KurriIslandPERSONAL-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+a,
+button {
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+
+.scrolltotop {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: rgb(255,228,35);
+    background: linear-gradient(176deg, rgba(255,228,35,1) 0%, rgba(255,130,37,1) 51%, rgba(255,53,39,1) 100%); 
+    text-align: center; 
+    font-size: 22px;
+    color: #ffffff;
+    position: fixed;
+    right: 30px;
+    bottom: 25px;
+    display: none;
+    animation: lab_top_up 5s linear infinite;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border: 2px solid #FF3527;
+    z-index: 1;    
+}
+
+.scrolltotop i {
+    color: #ffff;
+}
+
+@keyframes lab_top_up {
+    0% {
+        transform: translateY(-15px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+.pluse,
+.pluse2 {
+    position: relative;
+    top: 10px;
+    left: -8px;
+    z-index: -1;
+}
+
+.pluse::before,
+.pluse2::before {
+  width: 40px;
+  height: 40px;
+}
+
+.pluse::after,
+.pluse::before,
+.pluse2::after,
+.pluse2::before {
+    background: rgb(255,228,35);
+    background: linear-gradient(176deg, rgba(255,228,35,1) 0%, rgba(255,130,37,1) 51%, rgba(255,53,39,1) 100%); 
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+.pluse::after,
+.pluse2::after {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  margin-left: -15px;
+  margin-top: -15px;
+}
+
+.pluse::before {
+    -webkit-animation: pluse_animate 2.5s infinite linear;
+    animation: pluse_animate 2.5s infinite linear;
+}
+
+.pluse2::before {
+  -webkit-animation: pluse_animate 3s infinite linear;
+  animation: pluse_animate 3s infinite linear; 
+}
+
+@keyframes pluse_animate {
+    0% {
+        opacity: 1;
+        -webkit-transform: translate(-50%, -50%) scale(0.3);
+        transform: translate(-50%, -50%) scale(0.3);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate(-50%, -50%) scale(2);
+        transform: translate(-50%, -50%) scale(2);
+    }
+}
+
+
+/*==== nev area start===== */
+
+header {
+   
+    padding: 20px 0;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.04); 
+    position: fixed;
+    max-width: 98%;
+    width: 100%;
+    margin:10px auto;
+    left: 0;
+    right: 0;
+
+}
+header .container{
+    max-width: 95% !important;
+}
+nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+            
+}
+
+.logo {
+    max-width: 300px;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.menu-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.s-icon{
+    margin-left: 20px;
+}
+.s-icon a {
+    display: inline-block;
+    margin-right: 16px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+
+.s-icon a:hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+.menu-item ul li a {
+    font-family: Kurri Island PERSONAL; 
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.menu-item ul li a:hover {
+    color: #F90;
+}
+
+.active {
+    background: var(--Linear, linear-gradient(135deg, #FFE923 0%, #FF2727 100.76%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* .active a{
+    color: red !important;
+} */
+
+.menu-bar {
+    display: none;
+}
+
+.menu-bar a {
+    font-size: 30px;
+    color: #F90;
+    cursor: pointer;
+}
+
+.mobile-icon-ss {
+    display: none;
+}
+
+/*==== nev area end===== */
+
+/*==== sticky-nev start=== */
+
+.fixed-menu {
+
+    background: rgba(0, 0, 0, 0.767); 
+    position: fixed;
+    top: 0;
+    -webkit-animation: slide-down 0.5s !important;
+            animation: slide-down 0.5s !important;
+    left: 0;
+    right: 0;
+    -webkit-box-shadow: 4px -86px 103px rgba(0, 0, 0, 0.9);
+            box-shadow: 4px -86px 103px rgba(0, 0, 0, 0.9);
+    z-index: 250;
+    -webkit-transition: .10s;
+    -o-transition: .10s;
+    transition: .10s;
+}
+
+.fixed-menu .menu-bar a {
+    color: #F90 !important;
+}
+
+@-webkit-keyframes slide-down {
+    0% {
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(50%);
+                transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(50%);
+                transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+/*==== sticky-nev end=== */
+
+/* ====offcanvas manu start===== */
+
+.offcanvas-header {
+    background-color: #0f0f0f;
+}
+
+.offcanvas-header h5 img {
+    max-width: 100px;
+}
+
+.offcanvas-body {
+    background-color: #000000;
+    padding: 0px !important;
+}
+
+.clloss-x {
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.clloss-x:hover {
+    background: var(--Linear, linear-gradient(135deg, #FFE923 0%, #FF2727 100.76%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.offcanvas-start {
+    top: 0;
+    left: 0;
+    width: 340px;
+    z-index: 11111111111111;
+}
+
+.mobile-menu-item ul li a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    padding: 15px 20px;
+    display: block;
+    transition: .2s;
+}
+
+.mobile-menu-item ul li a:hover {
+    background-color: #333333;
+    background: var(--Linear, linear-gradient(135deg, #FFE923 0%, #FF2727 100.76%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.m-active {
+    background: rgba(255, 255, 255, 0.10);
+    background: var(--Linear, linear-gradient(135deg, #FFE923 0%, #FF2727 100.76%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mobile-menu-item ul li a i {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+/* ====offcanvas manu end===== */
+
+/* =====hero-area-start===== */
+
+.hero-area {
+    background-image: url(img/DRAGSOL2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 1350px;
+    padding: 20px 0 0px 0;
+}
+
+.hero-area p {
+    display: block;
+}
+.hero-title h4{
+    color:  #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 120px;
+
+}
+.hero-title h2 {
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 90px; 
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    font-family: Kurri Island PERSONAL; 
+	 -webkit-text-stroke-color: transparent;
+	 -webkit-text-stroke-width: 15px;
+	 -webkit-text-fill-color: #fff;
+	 background-clip: text;
+     background-image:linear-gradient(135deg, #FFE923 0%, #FF2727 100.76%); 
+}
+
+
+
+
+.hero-title p{
+    color: #EBEBEB;
+    text-align: center;
+    font-size: 16px;
+    line-height: 34px;
+    font-style: normal;
+    font-weight: 200;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+ 
+}
+
+.hero-title ul {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.hero-title ul li a {
+    font-family: Kurri Island PERSONAL; 
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 5px;
+
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    width: 160px; 
+}
+.hero-title ul li:first-of-type a{
+    width: inherit;
+    background: rgb(255,228,35);
+    background: linear-gradient(176deg, rgba(255,228,35,1) 0%, rgba(255,130,37,1) 51%, rgba(255,53,39,1) 100%); 
+}
+.hero-title ul li a:hover {
+    background-color: rgb(219, 134, 6);
+}
+
+.s2ndss{
+    background: #FFFFFF !important;
+}
+.s3rdss{
+    background: linear-gradient(176deg, rgba(255,228,35,1) 0%, rgba(255,130,37,1) 51%, rgba(255,53,39,1) 100%); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    border: 1px solid #ff8225;
+}
+
+.hero-title ul li:last-of-type a{
+    text-transform: uppercase;
+}
+
+/* about area start */
+
+.about-area {
+    padding: 140px 0;
+    background: #000; 
+}
+
+.max-abouts {
+    max-width: 1021px;
+    margin: auto;
+}
+
+
+
+.about-right h2 {
+    padding: 20px 10px;
+    color: #fff;
+    font-size: 65px; 
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    font-family: Kurri Island PERSONAL; 
+	 -webkit-text-stroke-color: transparent;
+	 -webkit-text-stroke-width: 10px;
+	 -webkit-text-fill-color: #fff;
+	 background-clip: text;
+     background-image:linear-gradient(135deg, #FFE923 0%, #FF2727 100.76%); 
+}
+
+.about-right p {
+    margin-bottom: 15px;
+}
+
+/* Tokenomics area start */
+
+.tokenomics-area {
+    padding: 62px 0 110px;
+    background: #0A0A0A;
+}
+
+.tokenomic-title h2 {
+    text-align: center;
+    padding: 20px 10px;
+    color: #fff;
+    font-size: 65px; 
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    font-family: Kurri Island PERSONAL; 
+	 -webkit-text-stroke-color: transparent;
+	 -webkit-text-stroke-width: 10px;
+	 -webkit-text-fill-color: #fff;
+	 background-clip: text;
+     background-image:linear-gradient(135deg, #FFE923 0%, #FF2727 100.76%); 
+     margin-bottom: 66px;
+}
+
+.token-left-item{
+    padding: 50px 25px 15px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.00);
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(2px);
+}
+.token-left-item h2{
+    background: var(--Linear, linear-gradient(135deg, #FFE923 0%, #FF2727 100.76%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Kurri Island PERSONAL; 
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.token-left-item ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.token-left-item ul li{
+    margin-bottom: 13px;
+}
+.token-left-item ul li:first-of-type{
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 16.8px */
+}
+.token-left-item ul li:last-of-type{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.token-left-item p{
+    background: var(--Linear, linear-gradient(135deg, #FFE923 0%, #FF2727 100.76%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Kurri Island PERSONAL; 
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+ 
+}
+
+/* token-right */
+.token-right{
+    border: 1px solid rgba(255, 255, 255, 0.00);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 72px 80px 80px 80px;
+    display: flex;
+}
+
+.token-right h2{
+    background: var(--Linear, linear-gradient(135deg, #FFE923 0%, #FF2727 100.76%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Kurri Island PERSONAL; 
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+  
+    margin-top: 60px;
+}
+.token-right ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+.token-right ul li{
+    margin-bottom: 13px;
+    display: flex;
+    align-items: center;
+}
+.token-right ul li img{
+    display: inline-block;
+    margin-right: 10px;
+}
+.token-right ul li:first-of-type{
+    color: #FFF;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 16.8px */
+}
+.token-right ul li:last-of-type{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.token-right-rr{
+    margin-left: 70px;
+}
+
+/* =========Our Roadmap start ======== */
+
+.our-roadmap-area {
+    padding: 70px 0;
+    background: #0A0A0A;
+    /* position: relative; */
+}
+
+.roadmap-title h2 {
+    padding: 20px 10px;
+    color: #fff;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    font-family: Kurri Island PERSONAL;
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: 10px;
+    -webkit-text-fill-color: #fff;
+    background-clip: text;
+    background-image: linear-gradient(135deg, #FFE923 0%, #FF2727 100.76%);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.roadmap-title p {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.road-map-timelines-items{
+    max-width: 700px;
+    margin: auto;
+   
+}
+.road-map-timelines-items ul{}
+
+.time-ln-ul{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.rd-left-li{
+    width: 330px;
+    padding-left: 60px;
+    border-right: 1px solid #2B2A2D;
+    position: relative;
+  
+}
+.cbdr{
+    border-right: none;
+    position: relative;
+}
+
+.cbdr::before{
+    content: "";
+    width: 1px;
+    height: 25px;
+    background-color: #2B2A2D;
+    display: block;
+    position: absolute; 
+    right: 0px;
+    top: 0px;
+    z-index: 99;
+}
+.rd-left-li span{
+    font-family: Kurri Island PERSONAL;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 24px */
+    background: var(--Linear, linear-gradient(135deg, #FFE923 0%, #FF2727 100.76%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-top: 15px;
+  
+}
+.rd-left-li::after{
+    content: "";
+    width: 75px;
+    height: 1px;
+    background-color: #2B2A2D;
+    display: block;
+    position: absolute; 
+    right: 0px;
+    top: 25px;
+}
+.fst-rd{
+    position: relative;
+}
+.fst-rd::before{
+    content: "";
+    width: 5px;
+    height: 25px;
+    background-color: #0A0A0A;
+    display: block;
+    position: absolute; 
+    right: -2px;
+    top: 0px;
+    z-index: 99;
+}
+.rd-right-li{
+    display: flex;
+    align-items: start;
+    padding-left: 50px;
+    width: 500px;
+}
+
+.rd-mp-left{}
+
+.rd-mp-right{
+    margin-left: 25px;
+    padding-bottom: 50px;
+}
+.rd-mp-right h2{
+    color: #FFF;
+    font-family: Kurri Island PERSONAL;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 30px */
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.rd-mp-right ul{
+    padding-left: 10px;
+}
+.rd-mp-right ul li{
+    list-style-type: disc;
+    color: #D7D7D7;
+    font-family: Lexend;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+}
+
+
+
+
+
+
+
+/* ====featured area======== */
+
+
+
+.our-featured-area {
+    padding: 9px 0 0 0;
+    background-image: url(img/rd-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 300px;
+    height: 750px;
+    background-color: #0A0A0A;
+    /* position: relative; */
+}
+
+
+
+.disclaimer-wrapper{
+    padding: 22px;
+    border-radius: 10px;
+    background: rgb(255,228,35);
+    background: linear-gradient(176deg, rgba(255,228,35,1) 0%, rgba(255,130,37,1) 51%, rgba(255,53,39,1) 100%); 
+    margin-top: 150px;
+   
+}
+.disclaimer-wrapper h2{
+    color: #000;
+    font-family: Kurri Island PERSONAL;
+    font-size: 38px; 
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.disclaimer-wrapper p{
+    font-family: Lexend;
+    font-size: 18px;
+    font-style: normal; 
+    color: #000; 
+    margin-bottom: 15px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+
+
+
+
+.cs-cn {
+    position: relative;
+    height: 100%;
+}
+
+.batsy99 {
+    /* margin-top: auto; */
+    position: absolute;
+    bottom: 50px;
+    right:-100px;
+}
+
+.follow-us_ {
+    width: 420px;
+    height: 305.719px;
+    background-image: url(img/mg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 100% 100%;
+    position: absolute;
+    bottom: 307px;
+    left: 90px;
+}
+
+.follow-content {
+    padding-top: 79px;
+    padding-left: 80px;
+}
+
+.follow-content h2 {
+ 
+    font-family: Kurri Island PERSONAL;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 40px */
+    text-transform: uppercase;
+    background: var(--Linear, linear-gradient(135deg, #FFE923 0%, #FF2727 100.76%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+.follow-content ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+           padding-left: 60px;
+}
+
+.follow-content ul li a img {
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.follow-content ul li a img:hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+body{
+    position: relative;
+}
+footer {
+    padding: 20px 0;
+    background: rgba(10, 10, 10, 0.60);
+    backdrop-filter: blur(12px);
+    position: absolute;
+    /* top:100%; */
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.footer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.footer-wrapper p {
+    color: #FFF;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+ html, body{
+    scroll-behavior: smooth;
+ }
+
+/* end all the css  */
+
+
+/* ======our partners area start====== */
+
+.partners-area{
+    padding: 70px 0 50px;
+    background: #0A0A0A;
+}
+
+.partners-title h2{
+    padding: 20px 10px;
+    color: #fff;
+    font-size: 65px; 
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    font-family: Kurri Island PERSONAL; 
+	 -webkit-text-stroke-color: transparent;
+	 -webkit-text-stroke-width: 10px;
+	 -webkit-text-fill-color: #fff;
+	 background-clip: text;
+     background-image:linear-gradient(135deg, #FFE923 0%, #FF2727 100.76%); 
+     text-align: center;
+    margin-bottom: 50px;
+}
+
+.pretners-items a{
+    display: block;
+    text-align: center;
+    border: 1px solid #141414;
+    background: #0A0A0A;
+    padding: 16px 45px;
+    margin-bottom: 20px;
+    height: 91px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+
+.copy-notification {
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.8);
+    padding: 20px;
+    border-radius: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    margin-top: -30px;
+    margin-left: -85px;
+    display: none;
+    text-align:center;
+}
+
+
+
+/* =======end all the css design======== */
+
+/* developer info :====
+			Asif sharker => frontend developer
+			+8801768705593 what'sapp number
+			Dhaka,Bangladesh.
+			Telegram: @asifsharkerwd */
+
+
+
+ .cs-row {
+    display: flex;
+ 
+ }
+
+ .custom-col-1s{
+    width: 40%;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+ .custom-col-2s{
+    width: 60%;
+    padding-left: 10px;
+    padding-right: 10px;
+ }

@@ -34,12 +34,12 @@ def airdrop_signup(request):
 
 
 def success_view(request):
+    balance = "50,000 $KTAICHI Point"
+    referal_count = "0"
     referral_id = request.GET.get('referral_id')
     referral_link = None
     if referral_id:
         referral_link = f"/airdrop/signup/?referral_id={referral_id}"
-        balance = "650,000 $DREW"
-        referal_count = "0"
     return render(request, 'airdrop/success.html', {'referral_id': referral_id, 'referral_link': referral_link, 'balance': balance, 'referal_count': referal_count})
 
 def user_info(request):
@@ -51,13 +51,13 @@ def user_info(request):
             user = User.objects.get(solana_wallet=solana_wallet)
             balance = user.balance
             referral_count = user.referral_count
-            return render(request, 'airdrop/user.html', {'user': user, 'balance': balance, 'referral_count': referral_count})
+            return render(request, 'airdrop/login.html', {'user': user, 'balance': balance, 'referral_count': referral_count})
         except User.DoesNotExist:
-            return render(request, 'airdrop/user.html', {'error_message': 'User not found', 'solana_wallet': solana_wallet})
+            return render(request, 'airdrop/login.html', {'error_message': 'User not found', 'solana_wallet': solana_wallet})
     else:
         # Render the form
         form = UserForm(request.POST)
-        return render(request, 'airdrop/user.html', {'form': form})
+        return render(request, 'airdrop/login.html', {'form': form})
     
 
 def index_view(request):
