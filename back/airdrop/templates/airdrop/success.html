@@ -1,0 +1,219 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$KTAICHI AIRDROP GIVEAWAY</title>
+  <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}"> 
+  <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}"> 
+  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}"> 
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/assets/22.png' %}"> 
+        <!-- Place favicon.ico in the root directory -->
+
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+   body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: whitesmoke;
+}
+
+ #headerbg {
+ 
+  height: 16vh;
+  /* width: 100vw; */
+  text-align: center;
+  background-image: url(assets/img/Images/about_img02.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+ 
+  padding: 20px;
+  text-align: center;
+ 
+} 
+
+main {
+  padding: 20px;
+}
+
+form {
+  /* max-width: 600px; */
+  /* margin: 0 auto; */
+  border: 1px solid black;
+  /* height: 100vh; */
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 246, 235, 0.714);
+  color: black;
+  /* width: 100vw; */
+
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: rgb(255, 72, 0);
+}
+
+input {
+  width: 100%;
+  padding: 15%;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+.container{
+    background-image: url('{% static 'img/assets/44.png' %}');
+     background-size: contain;
+      background-repeat: no-repeat; 
+      backface-visibility: 0; 
+      background-position: center; 
+      /* background-opacity: 0.2; */
+}
+
+</style>
+
+<body>
+    <!-- <div class="container-fluid" id="headerbg">
+      <div class="row">
+        <div class="col">
+        
+    
+        </div>
+      </div>  
+    </div> -->
+ 
+    <div class="container">
+      
+        <div class="row">
+           
+              <header class="my-3">
+                <div class="section-title text-center mb-60">
+                    <img src="{% static 'img/assets/22.png' %}" height="150px" width="150px" alt="">
+                  <h4 class="title my-3" >Successfully Participated !!</h4>
+                  
+                  
+              </div>
+            
+               
+              </header>
+              
+            <div class="col-md-12 ">
+                <main>
+                  <div class="section-title text-center mb-60">
+                    <h5 class="mb-5 text-light sub-title">Claim $KTAICHI Airdrop Now <br> (10,000 $KTAICHI points/Referral)</h5> 
+                    <!-- <h4 class="title"><span>Drew Token</span> Strategy and <br> Project Plan </h4> -->
+                    
+                </div>
+            
+
+                    
+                <form id="airdrop-form" action="submit.php" method="post">
+                  <img src=" {% static 'img/assets/22.png' %}" alt="" height="100px" width="100px" srcset="" class="img-center " style="margin-left: 75px;">
+                 
+     
+                         <div class="text-center my-5" >
+                             <p style="background-color: rgb(3, 179, 249); border: 1px solid black ; border-radius: 5px; color: white; padding: 10px;">
+                                 <b>
+                                     Referrals ID : 
+                                 </b>
+                                 <span>{{ referral_id }}</span>
+                             </p>
+     
+                             
+     
+                             
+                             <p style="background-color: rgb(249, 114, 3); border: 1px solid black ; border-radius: 5px; color: white; padding: 10px;">
+                                 <b>
+                                     $KTAICHI BAL : 
+                                 </b>
+                                 <span>{{ balance }}</span><b> $KTAICHI Point</b> 
+                             </p>
+                             <p style="color: black;">
+                                 <b>
+                                     Referrals : 
+                                 </b>
+                                 <span>{{ referal_count }}</span>
+                             </p>
+                      
+                           
+                             <p style="color: black;">
+                              {% if referral_link %}
+                                 <b>
+                                   Share Referral Link : 
+                                 </b>
+                                 <span>www.kittaichi.art{{ referral_link }}</span>
+                                 {% endif %}
+                             </p>
+                         </div>
+                         
+                       
+                 <a href="https://x.com/Kit_TaiChi" target="_blank" rel="" class="btn btn-warning text-center btn-center d-block my-2" style="background-color:  rgb(9, 170, 234);"><svg xmlns="http://www.w3.org/2000/svg" height="17" width="17" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg>  Share on Twitter </a>
+                 <a href="https://t.me/+rTs_P7E2uG5iZjY8" target="_blank" rel="" class="btn btn-warning text-center btn-center d-block my-2" style="background-color: rgb(255, 128, 0); font-size: 13px;"> <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 496 512"><path d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z"/></svg>  Join $KTAICHI Community </a>
+          
+   
+            <a href="/airdrop/login" target="_blank" rel="noopener noreferrer" class="btn text-center btn-center mt-5 mb-2" style="font-size: 10px;">Login with your SOL Wallet </a>
+           <br> <span>if already submitted before.</span><br>
+
+                </form>
+
+                <div class="section-title text-center  my-4 text-capitalized">
+                    <!-- <h4 class="title my-3" >$KTAICHI AIRDROP GIVEAWAY</h4> -->
+                    <h6 class=""><span class="sub-title">  Brace yourself for the ultimate crypto showdown with KIT TAI CHI <br> – the meme token that's taking the Solana blockchain by storm! <br> Join our fearless feline fighters and let's unleash the power of the paw together! <br> #CryptoRevolution #SolanaStrong
+                    <br> <br>  Ensure to join the $KTAICHI Community and Follow $KTAICHI on Twitter.
+                        </span> </h6>
+                    <p> 
+                        <span>Telegram:  https://t.me/+rTs_P7E2uG5iZjY8 </span> <br>
+                        
+                        <span>  Website: https://kittaichi.art</span> <br>
+                        <span>Twitter: https://x.com/Kit_TaiChi</span>
+                    </p>
+                   
+              </div>
+
+            </main>
+            </div>
+        </div>
+    </div>
+   
+    
+    
+ 
+
+    <footer>
+        <p>&copy; 2024 $KTAICHI Token. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+</html>

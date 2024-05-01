@@ -1,0 +1,641 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>KIT TAI CHI</title>
+  <meta name="description" content="Welcome to KIT TAI CHI Token" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{% static '/img/assets/icon.png' %}" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="{% static '/img/assets/icon.png' %}"/> 
+
+  <meta property="og:title" content="KIT TAI CHI" />
+  <meta property="og:description" content="Welcome to KIT TAI CHI Token" />
+  <meta property="og:image" content="img/assets/logo-1.png" />
+  <meta property="og:type" content="website" />
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="KIT TAI CHI">
+  <meta property="twitter:description" content="Welcome to KIT TAI CHI Token">
+  <meta property="twitter:image" content="{% static '/img/assets/logo-1.png' %}"> 
+
+  <!-- CSS
+	============================================ -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/> 
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min (2).css' %}"> 
+  <link rel="stylesheet" href="{% static 'css/revoulation.css' %}" /> 
+  <link rel="stylesheet" href="{% static 'css/plugins.css' %}"/> 
+  <link rel="stylesheet" href="{% static 'css/responsive.css' %}"> 
+  <!-- CSS here -->
+  <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}"> 
+  <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}"> 
+  <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}"> 
+
+  <script src="https://kit.fontawesome.com/fc558140b3.js" crossorigin="anonymous"></script>
+
+  <!-- Style Css -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" /> 
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="{% static 'css/custom.css' %}"/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet" />
+  <link rel="preload" href="img/assets/bg.jpg" as="image" />
+  
+</head>
+
+<body class="template-color-6 template-font-1">
+
+
+  <!-- Wrapper -->
+  <div id="wrapper" class="wrapper" style="background-image: image();">
+          <!-- Header -->
+          <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent" >
+            <div class="container-fluid" style="background-color: transparent;">
+              <a class="navbar-brand" href="#"> <img src="{% static 'img/assets/22.png' %}" alt="" height="100px" width="100px" srcset="">
+                
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse bg-black p-4 text-white" id="navbarScroll" style="border-radius: 3px;">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll d-flex ml-5 text-white " style="--bs-scroll-height: 100px; color: aliceblue;">
+                  <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li> -->
+                  <li class="nav-item" >
+                    <a class="nav-link text-white" href="#about">ABOUT</a>
+                  </li> <li class="nav-item">
+                    <a class="nav-link" href="#roadmap">ROADMAP</a>
+                  </li> <li class="nav-item">
+                    <a class="nav-link" href="#token">Tokenomics</a>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex">
+        
+                  <a class="btn " href="/airdrop/signup" target="_blank" style="background-color: #ff7b00;">Claim AIRDROP</a>
+                </form>
+              </div>
+            </div>
+          </nav>
+          
+            
+            <!-- header-area-end -->
+
+          
+
+          <!-- Start Toolbar -->
+          <div class="demo-option-container">
+            <div class="brook__toolbar">
+              <div class="inner">
+                <a class="hint--bounce hint--left hint--black primary-color-hover-important my-2 p-2" target="_blank"
+                  href="https://t.me/+rTs_P7E2uG5iZjY8" aria-label="Telegram">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="#000000" d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z"/></svg>
+                </a>
+                <a class="hint--bounce hint--left hint--black primary-color-hover-important my-5 p-2" target="_blank"
+                  href="https://x.com/Kit_TaiChi?t=Z8VspP5CDMxBQfjH-hs8fg&s=09" aria-label="Twitter">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#000000" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Toolbar -->
+
+          <!-- Start Popup Menu -->
+          <div class="popup-mobile-manu popup-mobile-visiable">
+            <div class="inner">
+              <div class="mobileheader">
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="{% static 'img/assets/22.png' %}" alt="logo image" class="rounded-circle w-25" />
+                  </a> 
+                </div>
+                <a class="mobile-close" href="#"></a>
+              </div>
+              <div class="menu-content">
+                <ul class="menulist object-custom-menu">
+                  <li>
+                    <a href="#home"><span>Home</span></a>
+                  </li>
+
+                  <li>
+                    <a href="#about"><span>About</span></a>
+                  </li>
+
+                  <li>
+                    <a href="#roadmap"><span>Roadmap</span></a>
+                  </li>
+
+                  <li>
+                    <a href="#token"><span>Tokenomics</span></a>
+                  </li>
+
+                  <!-- <li>
+                    <a href="#join"><span>Contact</span></a>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End Popup Menu -->
+
+    <!-- Page Conttent -->
+    <div class="rvbody">
+      <main class="page-content">
+        <!-- STart Slider Area -->
+        <div id="home" class="revolution-slider-area rslide">
+          <div class="revolution-slider slider-bg-2">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="inner pt--75 text-center">
+                    <div class="bkseparator--15"></div>
+                    
+                    <img src="{% static 'img/assets/55.png' %}" alt=""  class="home-img mt-4 bns1" />
+                    
+                    <div class="slider-btn">
+                      <a href="#" target="_blank" class=" d-inline-block px-3 mt-3 mt-md-0 bk-btn">Buy
+                        on Raydium</a>
+                      <a href="javascript:void(0);" onclick="copyClipboard('')"
+                        class="bk-btn px-1 px-md-3 mx-3 d-inline-block mt-3">Contract
+                        Address: NOT<strong>..</strong>ready 
+                        </a>
+                      <a href="/airdrop/signup" class="mt-3 mt-md-0 text-bold " target="_blank"
+                        style="background-color: #f19136;">Claim Airdrop</a>
+                    </div>
+                    <div class="slider-" style="margin-top:15px">
+                          <!-- <a href="https://www.pinksale.finance/solana/launchpad/ELduBN61jRmJ48ywF5wdWPzGhGAu7aeZJvhLt6XmLCmP" target="_blank"> -->
+                            <img src="{% static 'img/assets/logo-1.webp' %}" alt="Multipurpose" style='width:80px'
+                      />
+                            <!-- <p>PinkSale</p> -->
+                          </a>
+                           <!-- <a href="https://www.dexview.com" target="_blank"> -->
+                            <img src="{% static 'img/assets/logo-2.png' %}" alt="Multipurpose" style='width:90px' class="rounded-circle p-2"
+                              /> 
+                            <!-- <p>DEXTools</p> -->
+                          </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work-marquee o-hidden">
+              <div class="marquee marquee-1 d-flex text-white" style="background-color: #ff7b00;">
+                <span>KIT TAI CHI</span>
+                <span>About</span>
+                <span>KIT TAI CHI</span>
+                <span>About</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Slider Area -->
+        <div class="row justify-content-center my-5">
+          <div class="col-xl-10 my-5">
+              <div class="banner-countdown-wrap text-center">
+                  <h2 class="title text-bold text-light">Airdrop Starts In..</h2>
+                  <div class="coming-time" data-countdown="2024/4/31"></div>
+              </div>
+          </div>
+         
+      </div>
+        <!-- Start About Area -->
+        <div id="about" class="brook-about-area pt--130 pt_md--80 rslide bg-shape" data-background="#111">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="about-content text-center max-width--990">
+                  <h5 class="heading heading-h6 font-blod text-white letter-spacing-3 mb-4">
+                    About KIT TAI CHI
+                  </h5>
+                  <div class="bkseparator--10"></div> 
+                  <img src="{% static 'img/assets/111.jpeg' %}" alt="" class="my-3 animated infinite tada about-img rounded-circle" />
+                  <h4 class="heading heading-h3 line-height-1-62 text-white font-40">
+                   🥋Unleash Your Inner Warrior with KIT TAI CHI🥋
+<br><br>
+                    Prepare to enter a realm where the elegance of Chinese martial arts meets the whimsy of feline grace. <br> Introducing KIT TAI CHI, the revolutionary meme token that's redefining the boundaries of the crypto universe!
+                    <br>At KIT TAI CHI, we blend the centuries-old wisdom of Tai Chi with the agility and spirit of our beloved feline friends. Witness the beauty of balance as we embark on a journey of inner strength and outer tranquility.
+                  
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work-marquee o-hidden">
+            <div class="marquee marquee-2 d-flex text-white" style="background-color: #ff7b00;">
+              <span>KIT TAI CHI</span>
+              <span>Roadmap</span>
+              <span>KIT TAI CHI</span>
+              <span>Roadmap</span>
+            </div>
+          </div>
+        </div>
+        <!-- End About Area --> {% static 'img/assets/bg.jpg' %}
+
+        <section id="roadmap" class="section tc-light text-white"
+          style="background: url('{% static 'img/assets/bg.jpg' %}');background-size: cover;background-position: center;;background-attachment: fixed;">
+          <div class="container pt--130 pt_md--80 pt_sm--60 pb-4">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="about-content text-center max-width--990">
+                  <h6 class="heading heading-h3 text-white font-40 text-white letter-spacing-3">
+                    Roadmap
+                  </h6>
+                  <div class="bkseparator--10"></div>
+                  <h2 class="heading heading-h1 text-white" style="font-size:40px;">
+                    KIT TAI CHI Roadmap
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="nk-block mt-5">
+              <div class="row justify-content-center">
+                <div class="col-xl-10">
+                  <div class="roadmap-wrap mb-0">
+                    <div class="roadmap-line"></div>
+                    <div class="roadmap">
+                      <div class="roadmap-year"></div>
+                    </div>
+                    <div class="roadmap  wow roadmap-finished animated lightSpeedIn" data-delay="1s">
+                      <div class="roadmap-step animated infinite somthted">
+                        <div class="roadmap-head">
+                          <!-- <span class="roadmap-time">Time</span> -->
+                          <span class="roadmap-title">Phase - 1</span>
+                        </div>
+                        <p>Initial token launch and liquidity pool creation</p>
+                      </div>
+                    </div>
+                    <div class="roadmap roadmap-left wow roadmap-finished animated lightSpeedIn" data-delay="2s">
+                      <div class="roadmap-step animated infinite somthted ">
+                        <div class="roadmap-head">
+                          <!-- <span class="roadmap-time">Time</span> -->
+                          <span class="roadmap-title">Phase - 2</span>
+                        </div>
+                        <p>List on decentralized exchanges for easy trading
+                        </p>
+                      </div>
+                    </div>
+                    <div class="roadmap">
+                      <div class="roadmap-year"></div>
+                    </div>
+                    <div class="roadmap  wow animated lightSpeedIn" data-delay="3s">
+                      <div class="roadmap-step animated infinite somthted ">
+                        <div class="roadmap-head">
+                          <!-- <span class="roadmap-time">Time</span> -->
+                          <span class="roadmap-title">Phase - 3</span>
+                        </div>
+                        <p>Partnership with animal shelters for charity donations</p>
+                      </div>
+                    </div>
+                    <div class="roadmap roadmap-left wow animated lightSpeedIn" data-delay="4s">
+                      <div class="roadmap-step animated infinite somthted ">
+                        <div class="roadmap-head">
+                          <!-- <span class="roadmap-time">Time</span> -->
+                          <span class="roadmap-title">Phase - 4</span>
+                        </div>
+                        <p>Launch KIT TAI CHI NFT collection of cartoon cat art</p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- .col -->
+              </div><!-- .row -->
+            </div>
+          </div>
+          <div class="work-marquee o-hidden">
+            <div class="marquee marquee-3 d-flex text-dark" style="background-color: #fae3cd;">
+              <span>KIT TAI CHI</span>
+              <span>Tokenomics</span>
+              <span>KIT TAI CHI</span>
+              <span>Tokenomics</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Start Brand Area -->
+        <div id="tokenomics" class="brook-brand-area rslide bg-shape ptb--150 ptb-md--80 ptb-sm--60"
+          data-background="#222">
+          <div class="container-fluid plr--100 plr_sm--30 plr_md--50 mb--90">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-lg-4 text-center animated wow fadeInDown">
+                <img src="{% static 'img/assets/4.png' %}" alt="" class="my-3 animated bns1 infinite" data-delay="1s" />
+              </div>
+              <div class="col-lg-7">
+                <div class="about-content text-center max-width--990">
+                 
+                  <h4 class="heading heading-h3 line-height-1-62 text-white font-40">
+                    Our tokenomics are as precise as a master's strike. With a deflationary model and strategic reward mechanisms,
+                     KIT TAI CHI offers unparalleled opportunities for both holders and traders </h4> <br><br>
+                  
+                    <!-- <br><br>
+                    <h6 class="heading heading-h6 font-blod text-white letter-spacing-3">
+                      Total Supply
+                    </h6> <br> -->
+                  <h3 class="heading heading-h3 line-height-1-62 text-white font-40">
+                    All 70,000,000,000 KIT TAI CHI ($KTAICHI) tokens will be supplied at launch and will immediately go into
+                    liquidity pools. That's a
+                    whole lot of $KTAICHI !
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid plr--100 plr_sm--30 plr_md--50">
+            <div class="row justify-content-md-between justify-content-center  align-items-center">
+              <div class="col-lg-4 order-1 order-md-2 text-center animated wow fadeInUp">
+                <img src="{% static 'img/assets/3.png' %}" alt="" class="my-3 animated infinite pulse" data-delay="2s" />
+              </div> 
+              <div class="col-lg-7 order-2 order-md-1">
+                <div class="about-content text-center max-width--990">
+                  <h6 class="heading heading-h6 font-blod text-white letter-spacing-3">
+                    Taxes
+                  </h6>
+                  <!-- <div class="bkseparator--10"></div> -->
+                  <h3 class="heading heading-h3 line-height-1-62 text-white font-40">
+                    Nobody likes taxes, amirite? That's why with KIT TAI CHI there's a 0% buy and sell tax. No annoying
+                    fees to worry about
+                    - just free trading.
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+
+          
+		<!-- Tokenomics area end  -->
+		<section class="tokenomics-area overflow-hidden" id="token">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="token-left aos-init aos-animate" data-aos="fade-right">
+                <div class="token-left-item ">
+                          <h2>About Token</h2>
+                          <ul>
+                              <li>Token Name:</li>
+                              <li>KIT TAI CHI</li>
+                          </ul>
+                          <ul>
+                              <li>Token Symbol:</li>
+                              <li>$KTAICHI</li>
+                          </ul>
+                          <ul>
+                              <li>Total Supply:</li>
+                              <li>100,000,000,000
+                            </li>
+                                        </ul>
+                          <ul>
+                              <li>Taxes:</li>
+                              <li>0/0</li>
+                          </ul>
+                          <ul>
+                              <li>Marketing:</li>
+                              <li>5%</li>
+                          </ul>
+                        <ul>
+                              <li>CHAIN </li>
+                              <li>SOLANA CHAIN</li>
+                          </ul>
+                         
+                          <ul>
+                              <li>Token Address:</li>
+                              <li></li>
+                          </ul>
+                          <!-- <p style="font-size:12px">7mS3ENf5iTZBHGzFpb9Qrfx59rAf2LHSQM2dVuJP6Zeg</p> -->
+                          
+                        
+                </div>
+              </div>
+            </div>
+
+
+              <div class="col-md-6 p-4">
+                <div class="token-left aos-init aos-animate" data-aos="fade-right">  
+                  <div class="token-left-item p-3">
+                      <h2>Token Distribution</h2>
+                      <ul> 
+                          <li><img src="{% static 'img/cr1.png' %}" alt="">Public Sale</li>
+                          <li>50%</li>
+                      </ul>
+                      <ul>
+                          <li><img src="{% static 'img/cr2.png' %}" alt="">Airdrop</li>
+                          <li>20%</li>
+                      </ul>
+                      <ul>
+                        <li><img src="{% static 'img/cr1.png' %}" alt="">Presale</li>
+                        <li>10%</li>
+                    </ul>
+                    <ul>
+                      <li><img src="{% static 'img/cr2.png' %}" alt="">CEX Listing</li>
+                      <li>10%</li>
+                    </ul>
+                      <ul>
+                          <li><img src="{% static 'img/cr1.png' %}" alt="">Charity</li>
+                          <li>5%</li>
+                      </ul>
+                      <ul>
+                        <li><img src="{% static 'img/cr2.png' %}" alt="">Team</li>
+                        <li>5%</li>
+                    </ul>
+                        
+                      
+                  </div>
+                </div>
+          </div>
+              
+        </div>
+      </div>
+    </section>
+<!-- Tokenomics area end  -->
+
+          <div class="work-marquee o-hidden mb--90">
+            <div class="marquee marquee-4 d-flex  text-dark" style="background-color: #fae3cd;">
+              <span>KIT TAI CHI</span>
+              <span>Partners</span>
+              <span>KIT TAI CHI</span>
+              <span>Partners</span>
+            </div>
+          </div>
+
+          <div id="partners" class="">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="brook-section-title mb--40 text-center">
+                    <h6 class="heading heading-h6 text-white letter-spacing-3">
+                      Partners
+                    </h6>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="social-clint text-center" style="background-color:#000000;">
+                    <!-- Start Single Grid -->
+                    <div class="clint-grid">
+                      <div class="grid-inner">
+                        <div class="inner">
+                          <a href="https://www.pinksale.finance/solana/launchpad/ELduBN61jRmJ48ywF5wdWPzGhGAu7aeZJvhLt6XmLCmP" target="_blank">
+                            <img src="{% static 'img/assets/logo-1.webp' %}" alt="Multipurpose" class="rounded-circle"
+                              style="border:1px solid rgba(255, 255, 255,0.35);" />
+                            <!-- <p>PinkSale</p> -->  
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Single Grid -->
+
+                    <!-- Start Single Grid -->
+                    <div class="clint-grid">
+                      <div class="grid-inner">
+                        <div class="inner">
+                          <a href="https://www.dexview.com" target="_blank">
+                            <img src="{% static 'img/assets/logo-2.png' %}" alt="Multipurpose" class="rounded-circle"
+                              style="border:1px solid rgba(255, 255, 255,0.35);" />
+                            <!-- <p>DEXView</p> -->
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Single Grid -->
+
+                    <!-- Start Single Grid -->
+                    <div class="clint-grid">
+                      <div class="grid-inner">
+                        <div class="inner">
+                          <a href="#!"  target="_blank">
+                            <img src="{% static 'img/assets/logo-3.svg' %}" alt="Multipurpose" class="rounded-circle"
+                              style="border:1px solid rgba(255, 255, 255,0.35);" />
+                            <!-- <p>CoinMarketCap</p> -->
+                          </a> 
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Single Grid -->
+
+                    <!-- Start Single Grid -->
+                    <div class="clint-grid">
+                      <div class="grid-inner">
+                        <div class="inner">
+                          <a href="#!">
+                            <img src="{% static 'img/assets/logo-4.png' %}" alt="Multipurpose" class="rounded-circle"
+                              style="border:1px solid rgba(255, 255, 255,0.35);" />
+                            <!-- <p>BitMart</p> -->
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Single Grid -->
+
+                    <!-- Start Single Grid -->
+                    <div class="clint-grid">
+                      <div class="grid-inner">
+                        <div class="inner">
+                          <a href="#!">
+                            <img src="{% static 'img/assets/logo-5.png' %}" alt="Multipurpose" class="rounded-circle"
+                              style="border:1px solid rgba(255, 255, 255,0.35);" />
+                            <!-- <p>CoinGecko</p> --> 
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Single Grid -->
+
+                    <!-- Start Single Grid -->
+                    <div class="clint-grid">
+                      <div class="grid-inner">
+                        <div class="inner">
+                          <a href="">
+                            <img src="{% static 'img/assets/logo-6.png' %}" alt="Multipurpose" class="rounded-circle p-2"
+                              style="border:1px solid rgba(255, 255, 255,0.35);" />
+                            <!-- <p>DEXTools</p> --> 
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Single Grid -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Brand Area -->
+
+
+
+
+          <div class="py-4 py-md-3 text-white text-center" style="background-color: #002765;">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-6 col-md-3 justify-self-start">
+                <img src="{% static 'img/assets/4.png' %}" alt="" class="" style="width:35%;" >
+              </div>
+              
+              <div class="col-6 col-md-3 justify-self-end text-right">
+                <ul class="social-icon style-solid-rounded-icon icon-size-medium text-center animated wow fadeInUp">
+                  
+                  <li class="d-flex">
+                    <a href="https://x.com/Kit_TaiChi?t=Z8VspP5CDMxBQfjH-hs8fg&s=09" class="link mx-3" aria-label="Twitter" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#f0f2f5" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></i> <br><br>
+                    <a href="https://t.me/+rTs_P7E2uG5iZjY8" class="link mx-3" aria-label="Telegram" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path fill="#f0f2f5" d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z"/></svg>
+                  </li>
+
+
+                </ul>
+              </div>
+            </div>
+        </div>
+      </main>
+    </div>
+    <!--// Page Conttent -->
+  </div>
+
+  <!--// Wrapper -->
+  <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+  <script src="j{% static 'js/vendor/vendor.min.js' %}"></script> 
+  <script src="{% static 'js/plugins.min.js' %}"></script> 
+  <script src="{% static 'js/marquee.js' %}"></script> 
+  <!-- REVOLUTION JS FILES -->
+  <script src="{% static 'js/revolution.tools.min.js' %}"></script> 
+  <!-- SLIDER REVOLUTION 5.0 EXTENSIONS -->
+  <script src="{% static 'js/revolution.extension.min.js' %}"></script> 
+  <script src="{% static 'js/main.js' %}"></script> 
+  <script src="{% static 'js/revoulation.js' %}"></script> 
+  <script>
+    function copyClipboard(currentPageUrl) {
+      navigator.clipboard.writeText(currentPageUrl).then(() => {
+        alert("Copied to clipboard.");
+      });
+    }
+  </script>
+
+        <!-- JS here -->
+        
+        <script src="{% static 'assets/js/vendor/jquery-3.6.0.min.js' %}"></script> 
+        <script src="{% static 'assets/js/bootstrap.min.js' %}"></script> 
+        <script src="{% static 'assets/js/jquery.odometer.min.js' %}"></script> 
+        <script src="{% static 'assets/js/jquery.countdown.min.js' %}"></script> 
+        <script src="{% static 'assets/js/jquery.knob.min.js' %}"></script> 
+        <script src="{% static 'assets/js/jquery-countdowngampang.min.js' %}"></script> 
+        <script src="{% static 'assets/js/jquery.ba-throttle-debounce.min.js' %}"></script> 
+        <script src="{% static 'assets/js/jquery.mCustomScrollbar.min.js' %}"></script> 
+        <script src="{% static 'assets/js/jarallax.min.js' %}"></script> 
+        <script src="{% static 'assets/js/jquery.appear.js' %}"></script> 
+        <script src="{% static 'assets/js/slick.min.js '%}"></script>
+        <script src="assets/js/slick.min.js"></script> 
+        <script src="{% static 'assets/js/wow.min.js '%}"></script> 
+        <script src="{% static 'assets/js/main.js' %}"></script> 
+
+
+</body>
+
+</html>

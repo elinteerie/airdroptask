@@ -1,0 +1,537 @@
+/*
+====================================
+Medium Screen - Others
+====================================
+*/
+@media screen and (min-width: 1700px) and (max-width: 2000px) {
+    .hero-area {
+        background-repeat: no-repeat;
+        background-position:bottom top center;
+        height: 1650px;
+        background-size: cover;
+       
+      }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {}
+
+/*
+====================================
+Small Screen - Tablate
+====================================
+*/
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .menu-logo {
+        display: block !important;
+    }
+    .menu-bar {
+        display: block;
+    }
+    .menu-item {
+        display: none !important;
+    }
+    .s-icon{
+        display: none;
+    }
+    .mobile-icon-ss {
+        margin-top: -5px;
+        margin-right: 5px;
+        display: block !important;
+    }
+    .mobile-icon-ss ul li {
+        display: flex;
+    }   .mobile-icon-ss ul li a{
+        margin-right: 8px;
+    }
+    .menu-bar-wraper {
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-title h4 {
+        color: #FFF;
+        font-size: 31px;
+        margin-bottom: 7px;
+        margin-top: 120px;
+    }
+    .hero-title h2 {
+        font-size: 59px;
+    }
+    .hero-title h3 {
+        font-size: 23px;
+        margin-bottom: 24px;
+    }
+    .hero-title ul li a {
+        margin-bottom: 24px;
+    }
+    /* =========== */
+    .hero-title ul{
+        flex-wrap: wrap;
+    }
+    .hero-title ul li {
+        width: 50%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .hero-title ul li a {
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 13px  0px;
+        border-radius: 5px;
+        transition: .3s;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        width: 100%;
+        display: block;
+    }
+
+    .hero-title ul li:first-of-type a{
+        width: 100%;
+    }
+    .about-area {
+        padding: 43px 0;
+    }
+    .about-right {
+        margin-top: 29px;
+        text-align: center;
+    }
+    .about-right h2 {
+        font-size: 50px;
+    }
+    .tokenomic-title h2 {
+        color: #F90;
+        font-size: 50px;
+    }
+
+    .tokenomics-area {
+        padding: 50px 0 26px;
+        background: #0A0A0A;
+    }
+
+
+    .tokenomics-area {
+        padding: 50px 0 26px;
+    
+    }
+    .tokenomic-title h2{
+        font-size: 50px;
+    }
+    .about-btn- h3
+    {
+
+      font-size: 20px;
+    }
+
+
+    .token-left {
+        margin-bottom: 40px;
+    }
+
+    .partners-title h2 {
+        font-size: 44px;
+        line-height: 50px;
+        margin-bottom: 40px;
+    }
+    .token-right {
+        border: 1px solid rgba(255, 255, 255, 0.00);
+        background: rgba(255, 255, 255, 0.03);
+        padding: 35px 24px;
+        display: block;
+    }
+    .token-right-ll {
+        text-align: center;
+    }
+    .token-right-ll img{
+        width: 207px;
+    }
+    .token-right-rr {
+        margin-left: 0px;
+    }
+
+    .token-right h2 {
+
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    .token-right ul{
+        width: 100%;
+    }
+
+
+
+    .roadmap-title h2 {
+        font-size: 48px;
+    }
+    .roadmap-title p {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .our-roadmap-area {
+        padding: 44px 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+  
+        /* position: relative; */
+    }
+
+
+
+
+
+
+    .batsy99 {
+        margin-top: auto;
+        position: absolute;
+        bottom: 100px;
+        right: -50px;
+        width: 593px;
+    }
+    .follow-us_ {
+        width: 204px;
+        height: 159.719px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: 100% 100%;
+        position: absolute;
+        bottom: 288px;
+        left: 120px;
+    }
+    .follow-content h2 {
+        color: #FA9A00;
+        font-size: 22px;
+    }
+    .follow-content ul {
+        padding-left: 20px;
+    }
+    .follow-content {
+        padding-top: 22px;
+        padding-left: 30px;
+    }
+    .roadmap-item {
+        min-height: inherit;
+    }
+    .footer-wrapper {
+        display: block;
+        text-align: center;
+    }
+    .footer-wrapper p {
+        margin-top: 10px;
+    }
+
+    .kg-img img {
+        width: 250px;
+    }
+  
+
+    .cs-row {
+        display: block;
+     
+     }
+    
+     .custom-col-1s{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+     }
+     .custom-col-2s{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+     }
+    
+
+
+
+
+}
+
+/*
+====================================
+Small Screen - Mobile
+====================================
+*/
+
+
+@media screen and (max-width: 767px) {
+
+    .menu-logo {
+        display: block !important;
+    }
+    .menu-bar {
+        display: block;
+    }
+    .menu-item {
+        display: none !important;
+    }
+    .s-icon{
+        display: none;
+    }
+    .mobile-icon-ss {
+        margin-top: -5px;
+        margin-right: 5px;
+        display: block !important;
+    }
+    .mobile-icon-ss ul li {
+        display: flex;
+    }   .mobile-icon-ss ul li a{
+        margin-right: 8px;
+    }
+    .menu-bar-wraper {
+        display: flex;
+        align-items: center;
+    }
+    .hero-area {
+        height: 850px;
+        padding: 43px  0;
+        background-position:  center;
+        background-size: 100% 80%;
+     
+    }
+    .hero-title h4 {
+        color: #FFF;
+        font-size: 31px;
+        margin-bottom: 7px;
+        margin-top: 120px;
+    }
+    .hero-title h2 {
+        font-size: 59px;
+    }
+    .hero-title h3 {
+        font-size: 23px;
+        margin-bottom: 24px;
+    }
+    .hero-title ul li a {
+        margin-bottom: 24px;
+    }
+    .about-area {
+        padding: 43px 0;
+    }
+    .about-right {
+        margin-top: 29px;
+        text-align: center;
+    }
+    .about-right h2 {
+        font-size: 50px;
+    }
+    .tokenomic-title h2 {
+        color: #F90;
+        font-size: 50px;
+    }
+
+    .tokenomics-area {
+        padding: 50px 0 26px;
+        background: #0A0A0A;
+    }
+
+
+    .tokenomics-area {
+        padding: 50px 0 26px;
+    
+    }
+    .tokenomic-title h2{
+        font-size: 50px;
+    }
+    .about-btn- h3
+    {
+
+      font-size: 20px;
+    }
+
+
+    .token-left {
+        margin-bottom: 40px;
+    }
+
+    .partners-title h2 {
+        font-size: 44px;
+        line-height: 50px;
+        margin-bottom: 40px;
+    }
+    .token-right {
+        border: 1px solid rgba(255, 255, 255, 0.00);
+        background: rgba(255, 255, 255, 0.03);
+        padding: 35px 24px;
+        display: block;
+    }
+    .token-right-ll {
+        text-align: center;
+    }
+    .token-right-rr {
+        margin-left: 0px;
+    }
+
+    .token-right h2 {
+
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    .token-right ul{
+        width: 100%;
+    }
+
+
+
+    .roadmap-title h2 {
+        font-size: 48px;
+    }
+    .roadmap-title p {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .our-roadmap-area {
+        padding: 44px 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+  
+        /* position: relative; */
+    }
+
+    .time-ln-ul
+    {
+      display: block;
+    }
+
+    .rd-left-li
+    {
+      width: 100%;
+      padding-left: 15px;
+      margin-bottom: 10px;
+      border-right: none;
+    }
+
+    .rd-right-li {
+        display: flex;
+        align-items: start;
+        padding-left: 15px;
+        width: 100%;
+    }
+    .fst-rd::before {
+        display: none;
+    }
+    .fst-rd::after {
+        display: none;
+    }
+    .rd-left-li::after {
+        display: none;
+    }
+    .rd-left-li::after{
+        display: none;
+    }
+    .cbdr::before{
+        display: none;
+    }
+
+
+
+
+
+
+
+    .batsy99 {
+        margin-top: auto;
+        position: absolute;
+        bottom: 100px;
+        right: -50px;
+        width: 293px;
+    }
+    .follow-us_ {
+        width: 204px;
+        height: 159.719px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: 100% 100%;
+        position: absolute;
+        bottom: 158px;
+        left: 20px;
+    }
+    .follow-content h2 {
+        color: #FA9A00;
+        font-size: 22px;
+    }
+    .follow-content ul {
+        padding-left: 20px;
+    }
+    .follow-content {
+        padding-top: 22px;
+        padding-left: 30px;
+    }
+    .roadmap-item {
+        min-height: inherit;
+    }
+    .footer-wrapper {
+        display: block;
+        text-align: center;
+    }
+    .footer-wrapper p {
+        margin-top: 10px;
+    }
+
+    .kg-img img {
+        width: 250px;
+    }
+  
+
+
+
+/* =========== */
+.hero-title ul{
+    flex-wrap: wrap;
+}
+.hero-title ul li {
+    width: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .hero-title ul li a {
+	color: #000;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 13px  0px;
+	border-radius: 5px;
+	transition: .3s;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	width: 100%;
+	display: block;
+}
+
+.hero-title ul li:first-of-type a{
+    width: 100%;
+}
+
+
+
+.cs-row {
+    display: block;
+ 
+ }
+
+ .custom-col-1s{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+ .custom-col-2s{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+
+
+
+
+}
